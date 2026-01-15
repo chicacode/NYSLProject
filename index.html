@@ -1,67 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <title>Home NYSL</title> <!--<link
-rel="stylesheet" href="styles/styles.css">-->
-<!--<link rel="stylesheet" href="styles/nysl_1.css">-->
-<!--<link rel="stylesheet" href="styles/nysl_2.css">-->
-<link rel="stylesheet" href="styles/nysl_3.css"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mighty Ducks Hockey League - Youth hockey league fostering teamwork, discipline, and sportsmanship">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>MDHL - Mighty Ducks Hockey League</title>
 
 </head>
-<!-- Start the body -->
 <body>
-<div class="content">
-    
-<header>
-<div class="imago"><img src="Attachments/image2.jpg" alt="imago"></div>   
-<div class="image1">
-<img src="Attachments2/design1_image1.jpeg" alt="image1">
-</div>
-    
-<div class="logo">
-<img src="Attachments/nysl_logo.png" alt="logo">
-</div>
-<div class="logus blue">
-<img src="Attachments/nysl_logo3.png" alt="logus blue">
-</div>
+    <!-- Skip to main content link for screen readers -->
+    <a href="#main" class="skip-link">Skip to main content</a>
 
-<div class="title">
-<h1>NORTHSIDE YOUTH SOCCER LEAGUE</h1>  
-    
-<nav class="nav">
-<div class="box active"><a href="index.html">Home</a> <span class="bar">|</span></div>
- 
-<div class="box"><a href="about.html">About NYSL</a> <span class="bar">|</span></div>
-    
-<div class="box"><a href="contact.html">Contact</a></div>
-<div class="box"><a href="rules.html">Rules & Policies</a></div>
-<div class="box"><a href="game_info.html">Games Information</a></div>
-<div class="box"><a href="registration.html">Registration</a></div>
-</nav>
-<div class="boy"><img src="Attachments/soccer_image1.jpeg" alt="boy"></div>
-<h2>Upcoming Events</h2>   
-    
-</div>
-</header>
-    
-<section>
-<div class="paragraphs">
+    <!-- Header & Navigation -->
+    <header role="banner">
+        <div class="header-container">
+            <a href="#home" class="logo" aria-label="MDHL Home">
+                <div class="logo-text">
+                    <h1>MDHL</h1>
+                    <p class="logo-tagline">Mighty Ducks Hockey League</p>
+                </div>
+            </a>
+            
+            <button class="menu-toggle" aria-label="Toggle navigation menu" onclick="toggleMenu()">
+                ☰
+            </button>
+            
+            <nav role="navigation" aria-label="Main navigation">
+                <ul id="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#rules">Rules</a></li>
+                    <li><a href="#games">Games</a></li>
+                    <li><a href="#registration">Register</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
 
-<em>August 4</em>
-<div class="enter">NYSL Fundraiser</div>
+    <!-- Main Content -->
+    <main id="main" role="main">
+        
+        <!-- Hero Section -->
+        <section id="home">
+            <div class="hero-content">
+                <h2>Welcome to Mighty Ducks Hockey League</h2>
+                <p>Building champions on and off the ice since 1996</p>
+                <div class="cta-buttons">
+                    <a href="#registration" class="btn btn-primary">Register Now</a>
+                    <a href="#about" class="btn btn-secondary">Learn More</a>
+                </div>
+            </div>
+        </section>
 
-<em>August 16</em>
-<div class="space">Season Kick-off: Meet the Teams</div>
+        <!-- About Section -->
+        <section id="about">
+            <h2>About MDHL</h2>
+            <p class="section-subtitle">Fostering excellence in youth hockey for over 25 years</p>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p>The Mighty Ducks Hockey League (MDHL) was established in 1996 to provide young athletes with a structured, competitive environment to develop their hockey skills while learning valuable life lessons.</p>
+                    <br>
+                    <p>We believe that hockey is more than just a sport—it's a platform for building character, teamwork, and lifelong friendships. Our league serves players aged 4-16 across all skill levels, from beginners to advanced competitors.</p>
+                    <br>
+                    <p>With experienced coaches, state-of-the-art facilities, and a commitment to fair play, MDHL has become one of the premier youth hockey organizations in the region.</p>
+                </div>
+                
+                <div class="mission-box">
+                    <h3>Our Mission</h3>
+                    <p>To provide a safe, inclusive, and competitive environment where young athletes can develop their hockey skills, build character, and create lasting memories while fostering sportsmanship, teamwork, and personal growth.</p>
+                </div>
+            </div>
+        </section>
 
-<em>September 1</em>
-<div class="line">First Game of the Season (Check Game Schedule for details)</div>
-</div>
-</section>
+        <!-- Rules Section -->
+        <section id="rules">
+            <h2>League Rules & Guidelines</h2>
+            <p class="section-subtitle">Ensuring fair play and safety for all participants</p>
+            
+            <div class="rules-grid">
+                <div class="rule-card">
+                    <div class="rule-number">1</div>
+                    <h3>Eligibility</h3>
+                    <p>All players must be between 4-16 years old and have a signed parental consent form. Medical clearance is required for all participants.</p>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">2</div>
+                    <h3>Equipment</h3>
+                    <p>Full protective gear is mandatory: helmet with face mask, shoulder pads, elbow pads, gloves, hockey pants, shin guards, and skates. All equipment must meet league safety standards.</p>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">3</div>
+                    <h3>Conduct</h3>
+                    <p>Players, coaches, and spectators must demonstrate respect and sportsmanship at all times. Zero tolerance for fighting, verbal abuse, or unsportsmanlike conduct.</p>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">4</div>
+                    <h3>Attendance</h3>
+                    <p>Regular attendance at practices and games is expected. Players must notify their coach at least 24 hours in advance of any absence.</p>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">5</div>
+                    <h3>Fair Play</h3>
+                    <p>All players must receive equal ice time regardless of skill level. Emphasis is on development and enjoyment of the game.</p>
+                </div>
+                
+                <div class="rule-card">
+                    <div class="rule-number">6</div>
+                    <h3>Game Day</h3>
+                    <p>Players must arrive 30 minutes before game time. Team colors must be worn. Late arrivals may result in reduced playing time.</p>
+                </div>
+            </div>
+        </section>
 
-</div>
-    <!-- End body -->
+        <!-- Games Section -->
+        <section id="games">
+            <h2>Upcoming Games Schedule</h2>
+            <p class="section-subtitle">Fall 2024 Season Schedule</p>
+            
+            <div class="games-table-container">
+                <table role="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Time</th>
+                            <th scope="col">Home Team</th>
+                            <th scope="col">Away Team</th>
+                            <th scope="col">Location</th>
+                            <th scope="col">Division</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Sept 20</td>
+                            <td>9:30 AM</td>
+                            <td>Mighty Ducks</td>
+                            <td>Ice Hawks</td>
+                            <td>Rink A</td>
+                            <td>U-12</td>
+                        </tr>
+                        <tr>
+                            <td>Sept 20</td>
+                            <td>1:00 PM</td>
+                            <td>Polar Bears</td>
+                            <td>Thunder Cats</td>
+                            <td>Rink B</td>
+                            <td>U-10</td>
+                        </tr>
+                        <tr>
+                            <td>Sept 27</td>
+                            <td>10:00 AM</td>
+                            <td>Ice Hawks</td>
+                            <td>Storm Riders</td>
+                            <td>Rink A</td>
+                            <td>U-12</td>
+                        </tr>
+                        <tr>
+                            <td>Sept 27</td>
+                            <td>2:00 PM</td>
+                            <td>Thunder Cats</td>
+                            <td>Lightning Bolts</td>
+                            <td>Rink C</td>
+                            <td>U-14</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 4</td>
+                            <td>9:00 AM</td>
+                            <td>Mighty Ducks</td>
+                            <td>Polar Bears</td>
+                            <td>Rink B</td>
+                            <td>U-12</td>
+                        </tr>
+                        <tr>
+                            <td>Oct 4</td>
+                            <td>12:30 PM</td>
+                            <td>Storm Riders</td>
+                            <td>Ice Hawks</td>
+                            <td>Rink A</td>
+                            <td>U-10</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Registration Section -->
+        <section id="registration">
+            <h2>Player Registration</h2>
+            <p class="section-subtitle">Join our league and start your hockey journey today!</p>
+            
+            <div class="form-container">
+                <form action="#" method="post" aria-labelledby="registration">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="firstName">First Name <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="firstName" name="firstName" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="lastName">Last Name <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="lastName" name="lastName" required aria-required="true">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="dob">Date of Birth <span class="required" aria-label="required">*</span></label>
+                            <input type="date" id="dob" name="dob" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="gender">Gender <span class="required" aria-label="required">*</span></label>
+                            <select id="gender" name="gender" required aria-required="true">
+                                <option value="">Select...</option>
+                                <option value="male">Male</option>
+                                <option value="female">Female</option>
+                                <option value="other">Other</option>
+                                <option value="prefer-not">Prefer not to say</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address <span class="required" aria-label="required">*</span></label>
+                        <input type="email" id="email" name="email" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="phone">Phone Number <span class="required" aria-label="required">*</span></label>
+                        <input type="tel" id="phone" name="phone" required aria-required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="address">Street Address <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="address" name="address" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="city">City <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="city" name="city" required aria-required="true">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="state">State <span class="required" aria-label="required">*</span></label>
+                            <input type="text" id="state" name="state" required aria-required="true" maxlength="2" placeholder="NY">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="division">Division <span class="required" aria-label="required">*</span></label>
+                        <select id="division" name="division" required aria-required="true">
+                            <option value="">Select Division...</option>
+                            <option value="u6">Under 6 (Mite)</option>
+                            <option value="u8">Under 8 (Squirt)</option>
+                            <option value="u10">Under 10 (Peewee)</option>
+                            <option value="u12">Under 12 (Bantam)</option>
+                            <option value="u14">Under 14 (Midget)</option>
+                            <option value="u16">Under 16 (Juvenile)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="experience">Hockey Experience <span class="required" aria-label="required">*</span></label>
+                        <select id="experience" name="experience" required aria-required="true">
+                            <option value="">Select...</option>
+                            <option value="none">None (First time)</option>
+                            <option value="beginner">Beginner (1 season)</option>
+                            <option value="intermediate">Intermediate (2-3 seasons)</option>
+                            <option value="advanced">Advanced (4+ seasons)</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="parentName">Parent/Guardian Name <span class="required" aria-label="required">*</span></label>
+                        <input type="text" id="parentName" name="parentName" required aria-required="true">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="emergency">Emergency Contact <span class="required" aria-label="required">*</span></label>
+                        <input type="tel" id="emergency" name="emergency" required aria-required="true" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="medical">Medical Conditions / Allergies</label>
+                        <textarea id="medical" name="medical" placeholder="Please list any medical conditions, allergies, or medications the player takes..."></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="consent" name="consent" required aria-required="true">
+                        <label for="consent">I agree to the league rules and have read the waiver <span class="required" aria-label="required">*</span></label>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <input type="checkbox" id="photo" name="photo">
+                        <label for="photo">I consent to photos/videos of my child being used for league promotion</label>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Submit Registration</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p class="section-subtitle">Get in touch with the MDHL team</p>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">League Office</h3>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📍</div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>1234 Hockey Lane<br>Chicago, IL 60601</p>
+                        </div>  
+                    </div>
+
+                       <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">📞</div>
+                        <div class="contact-details">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+13125551234" style="color: white; text-decoration: none;">(312) 555-1234</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p><a href="mailto:info@mdhl.com" style="color: white; text-decoration: none;">info@mdhl.com</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <div class="contact-icon" aria-hidden="true">🕐</div>
+                        <div class="contact-details">
+                            <h3>Office Hours</h3>
+                            <p>Monday - Friday: 9:00 AM - 6:00 PM<br>Saturday: 10:00 AM - 4:00 PM<br>Sunday: Closed</p>
+                        </div>
+                    </div>
+                </div>
+           
+                <div class="form-container" style="margin: 0; box-shadow: none;">
+                    <h3 style="margin-bottom: 1.5rem; color: var(--primary-blue);">Send us a message</h3>
+                    <form action="#" method="post">
+                        <div class="form-group">
+                            <label for="contactName">Your Name <span class="required">*</span></label>
+                            <input type="text" id="contactName" name="contactName" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="contactEmail">Email Address <span class="required">*</span></label>
+                            <input type="email" id="contactEmail" name="contactEmail" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject <span class="required">*</span></label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message <span class="required">*</span></label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2026 Mighty Ducks Hockey League (MDHL). All rights reserved.</p>
+        <p style="margin-top: 0.5rem;">Building champions on and off the ice since 1996</p>
+    </footer>
+
+    <script src="./javascript/script.js"></script>
 </body>
-
-</html>
+</html></parameter>
