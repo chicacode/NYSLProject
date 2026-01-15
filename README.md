@@ -354,7 +354,7 @@ Future enhancements planned:
 - [ ] Integrate payment processing for registration
 - [ ] Add blog/news section
 - [ ] Create mobile app
-- [ ] Migrte to React 19
+- [ ] Migrate to React 19
 
 ---
 
